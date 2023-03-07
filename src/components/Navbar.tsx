@@ -29,7 +29,7 @@ export default function Navbar(): JSX.Element {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Pages
+          Dashboard
         </a>
       </Typography>
       <Typography
@@ -39,7 +39,7 @@ export default function Navbar(): JSX.Element {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Account
+          Products
         </a>
       </Typography>
       <Typography
@@ -49,7 +49,7 @@ export default function Navbar(): JSX.Element {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Blocks
+          Orders
         </a>
       </Typography>
       <Typography
@@ -59,7 +59,7 @@ export default function Navbar(): JSX.Element {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Docs
+          Customers
         </a>
       </Typography>
     </ul>
