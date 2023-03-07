@@ -70,23 +70,32 @@ export default function Navbar(): JSX.Element {
       <NavbarMTR className="mx-auto max-w-screen-xl shadow-none">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900 border-none">
           <Typography
-            as="a"
-            href="#"
+            as="h3"
             variant="small"
             className="mr-4 cursor-pointer py-1.5 font-normal"
           >
-            <span>Repliq</span>
+            Repliq
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-          <Button
-            variant="gradient"
-            size="sm"
-            className="hidden lg:inline-block"
-          >
-            <span>
-              <FaShoppingCart />
-            </span>
-          </Button>
+          <div className="flex justify-center space-x-2">
+            <Typography
+              as="button"
+              href="#"
+              variant="small"
+              className="mr-4 cursor-pointer py-1.5 font-normal"
+            >
+              Login
+            </Typography>
+            <Button
+              variant="gradient"
+              size="sm"
+              className="hidden lg:inline-block"
+            >
+              <span>
+                <FaShoppingCart />
+              </span>
+            </Button>
+          </div>
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
