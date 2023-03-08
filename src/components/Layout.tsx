@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="mx-auto max-w-screen-xl">{children}</main>
     </>
   );
 };
