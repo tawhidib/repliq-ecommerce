@@ -23,5 +23,11 @@ export default function ProductsPage(): JSX.Element {
     });
   }, []);
 
-  return <></>;
+  return (
+    <div className="component mx-auto">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio eveniet
+      distinctio odit deserunt error minima, voluptas atque iure in quis culpa,
+      excepturi iusto illum corrupti quo. Repellendus unde in aspernatur!
+    </div>
+  );
 }
