@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import axios from "axios";
 export type ProductType = {
   id: number;
   title: string;
@@ -14,6 +14,14 @@ export type ProductType = {
 
 export default function ProductsPage(): JSX.Element {
   const [products, setProducts] = useState<ProductType[]>([]);
+
+  useEffect(() => {
+    axios.get("https://fakestoreapi.com/products").then(({ data, status }) => {
+      if (status === 200) {
+        setProducts(data);
+      }
+    });
+  }, []);
 
   return <></>;
 }
